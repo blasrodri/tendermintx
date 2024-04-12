@@ -22,7 +22,7 @@ use tendermintx::consts::VALIDATOR_SET_SIZE_MAX;
 use tendermintx::step::StepCircuit;
 
 fn main() {
-    // Note: Defaults to using the BanksyConfig, but any Tendermint chain config can be used.
+    // Note: Defaults to using the CentauriMainnetConfig, but any Tendermint chain config can be used.
     StepCircuit::<
         VALIDATOR_SET_SIZE_MAX,
         CENTAURI_COSMOS_MAINNET_CHAIN_ID_SIZE_BYTES,

@@ -41,7 +41,7 @@ pub const CENTAURI_COSMOS_MAINNET_CHAIN_ID_SIZE_BYTES: usize =
     CENTAURI_COSMOS_MAINNET_CHAIN_ID.len();
 #[derive(Debug, Clone, PartialEq)]
 pub struct CentauriCosmosMainnetConfig;
-impl TendermintConfig<CENTAURI_COSMOS_MAINNET_CHAIN_ID_SIZE_BYTES> for BanksyConfig {
+impl TendermintConfig<CENTAURI_COSMOS_MAINNET_CHAIN_ID_SIZE_BYTES> for CentauriCosmosMainnetConfig {
     const CHAIN_ID_BYTES: &'static [u8] = CENTAURI_COSMOS_MAINNET_CHAIN_ID;
     const SKIP_MAX: usize = SKIP_MAX;
 }
